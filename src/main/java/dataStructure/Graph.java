@@ -125,8 +125,10 @@ public class Graph {
         graph.addEdge(1,4);
         graph.addEdge(2,4);
         graph.addEdge(3,5);
+        graph.addEdge(2, 5);
+        graph.addEdge(5,1);
 
-        System.out.println(graph.hasPathDFS(2, 1));
-        System.out.println(graph.hasPathBFS(2, 1));
+        System.out.println(graph.hasPathDFS(5, 1));
+        System.out.println(graph.hasPathBFS(5, 1));
     }
 }
